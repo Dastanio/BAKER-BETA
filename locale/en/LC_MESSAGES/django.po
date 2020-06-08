@@ -1,0 +1,588 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-08 16:25+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\templates\about.html:7
+msgid "О нас!"
+msgstr "About us!"
+
+#: .\templates\about.html:11
+msgid ""
+"Кондитерский цех «Бонжур» - одно из крупных кондитерских предприятий г."
+"Бишкек, основанное в 2003 г.Сегодня Бонжур – это актуальный и активно "
+"растущий бренд, стабильно развивающиеся предприятие.Основным видом "
+"деятельности является оптовая продажа кондитерскими изделиями, а также торты "
+"на заказ(свадебные, юбилейные, детские) и широкий ассортимент кондитерских "
+"изделий на праздничные банкеты, фуршеты и кенди-бар. При производстве "
+"кондитерских изделий используются качественные, натуральные и разрешенные "
+"халал продукты."
+msgstr ""
+"Confectionery shop Bonjour is one of the largest confectionery enterprises "
+"in Bishkek, founded in 2003. Today Bonjour is a relevant and rapidly growing "
+"brand, steadily developing enterprises. The main activity is the wholesale "
+"of confectionery, as well as custom-made cakes (wedding , anniversary, "
+"children's) and a wide range of confectionery for festive banquets, "
+"receptions and a candy bar. In the manufacture of confectionery products, "
+"quality, natural and permitted halal products are used."
+
+#: .\templates\account\account_inactive.html:5
+#: .\templates\account\account_inactive.html:8
+msgid "Account Inactive"
+msgstr ""
+
+#: .\templates\account\account_inactive.html:10
+msgid "This account is inactive."
+msgstr ""
+
+#: .\templates\account\email.html:5 .\templates\account\email.html:8
+msgid "E-mail Addresses"
+msgstr ""
+
+#: .\templates\account\email.html:10
+msgid "The following e-mail addresses are associated with your account:"
+msgstr ""
+
+#: .\templates\account\email.html:24
+msgid "Verified"
+msgstr ""
+
+#: .\templates\account\email.html:26
+msgid "Unverified"
+msgstr ""
+
+#: .\templates\account\email.html:28
+msgid "Primary"
+msgstr ""
+
+#: .\templates\account\email.html:34
+msgid "Make Primary"
+msgstr ""
+
+#: .\templates\account\email.html:35
+msgid "Re-send Verification"
+msgstr ""
+
+#: .\templates\account\email.html:36
+#: .\templates\socialaccount\connections.html:35
+msgid "Remove"
+msgstr ""
+
+#: .\templates\account\email.html:43
+msgid "Warning:"
+msgstr ""
+
+#: .\templates\account\email.html:43
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+
+#: .\templates\account\email.html:48
+msgid "Add E-mail Address"
+msgstr ""
+
+#: .\templates\account\email.html:53
+msgid "Add E-mail"
+msgstr ""
+
+#: .\templates\account\email.html:62
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr ""
+
+#: .\templates\account\email_confirm.html:6
+#: .\templates\account\email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr ""
+
+#: .\templates\account\email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+
+#: .\templates\account\email_confirm.html:20
+msgid "Confirm"
+msgstr ""
+
+#: .\templates\account\email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+
+#: .\templates\account\login.html:6 .\templates\account\login.html:10
+#: .\templates\account\login.html:43
+msgid "Sign In"
+msgstr ""
+
+#: .\templates\account\login.html:15
+#, python-format
+msgid ""
+"Please sign in with one\n"
+"of your existing third party accounts. Or, <a href=\"%(signup_url)s\">sign "
+"up</a>\n"
+"for a %(site_name)s account and sign in below:"
+msgstr ""
+
+#: .\templates\account\login.html:25
+msgid "or"
+msgstr ""
+
+#: .\templates\account\login.html:32
+#, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"<a href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
+
+#: .\templates\account\login.html:42
+msgid "Forgot Password?"
+msgstr ""
+
+#: .\templates\account\logout.html:5 .\templates\account\logout.html:8
+#: .\templates\account\logout.html:17
+msgid "Sign Out"
+msgstr ""
+
+#: .\templates\account\logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr ""
+
+#: .\templates\account\password_change.html:5
+#: .\templates\account\password_change.html:8
+#: .\templates\account\password_change.html:13
+#: .\templates\account\password_reset_from_key.html:4
+#: .\templates\account\password_reset_from_key.html:7
+#: .\templates\account\password_reset_from_key_done.html:4
+#: .\templates\account\password_reset_from_key_done.html:7
+msgid "Change Password"
+msgstr ""
+
+#: .\templates\account\password_reset.html:6
+#: .\templates\account\password_reset.html:10
+#: .\templates\account\password_reset_done.html:6
+#: .\templates\account\password_reset_done.html:9
+msgid "Password Reset"
+msgstr ""
+
+#: .\templates\account\password_reset.html:15
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+
+#: .\templates\account\password_reset.html:20
+msgid "Reset My Password"
+msgstr ""
+
+#: .\templates\account\password_reset.html:23
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+
+#: .\templates\account\password_reset_done.html:15
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: .\templates\account\password_reset_from_key.html:7
+msgid "Bad Token"
+msgstr ""
+
+#: .\templates\account\password_reset_from_key.html:11
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+
+#: .\templates\account\password_reset_from_key.html:17
+msgid "change password"
+msgstr ""
+
+#: .\templates\account\password_reset_from_key.html:20
+#: .\templates\account\password_reset_from_key_done.html:8
+msgid "Your password is now changed."
+msgstr ""
+
+#: .\templates\account\password_set.html:5
+#: .\templates\account\password_set.html:8
+#: .\templates\account\password_set.html:13
+msgid "Set Password"
+msgstr ""
+
+#: .\templates\account\signup.html:5 .\templates\socialaccount\signup.html:5
+msgid "Signup"
+msgstr ""
+
+#: .\templates\account\signup.html:8 .\templates\account\signup.html:18
+#: .\templates\socialaccount\signup.html:8
+#: .\templates\socialaccount\signup.html:19
+msgid "Sign Up"
+msgstr ""
+
+#: .\templates\account\signup.html:10
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+
+#: .\templates\account\signup_closed.html:5
+#: .\templates\account\signup_closed.html:8
+msgid "Sign Up Closed"
+msgstr ""
+
+#: .\templates\account\signup_closed.html:10
+msgid "We are sorry, but the sign up is currently closed."
+msgstr ""
+
+#: .\templates\account\snippets\already_logged_in.html:5
+msgid "Note"
+msgstr ""
+
+#: .\templates\account\snippets\already_logged_in.html:5
+#, python-format
+msgid "you are already logged in as %(user_display)s."
+msgstr ""
+
+#: .\templates\account\verification_sent.html:5
+#: .\templates\account\verification_sent.html:8
+#: .\templates\account\verified_email_required.html:5
+#: .\templates\account\verified_email_required.html:8
+msgid "Verify Your E-mail Address"
+msgstr ""
+
+#: .\templates\account\verification_sent.html:10
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: .\templates\account\verified_email_required.html:12
+msgid ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address. "
+msgstr ""
+
+#: .\templates\account\verified_email_required.html:16
+msgid ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside this e-mail. Please\n"
+"contact us if you do not receive it within a few minutes."
+msgstr ""
+
+#: .\templates\account\verified_email_required.html:20
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+msgstr ""
+
+#: .\templates\base.html:21
+msgid "Главная"
+msgstr "Home"
+
+#: .\templates\base.html:23
+msgid "О нас"
+msgstr "About us"
+
+#: .\templates\base.html:25
+msgid "Продукция"
+msgstr "Products"
+
+#: .\templates\base.html:27
+msgid "Сделать заказ"
+msgstr "Make an Order"
+
+#: .\templates\base.html:49
+msgid "Сделано с любовью"
+msgstr "Made with Love"
+
+#: .\templates\base.html:54
+msgid "Выйти"
+msgstr "Log out"
+
+#: .\templates\base.html:56
+msgid "Зарегестрироваться"
+msgstr "Sign on"
+
+#: .\templates\base.html:57
+msgid "Войти"
+msgstr "Sign in"
+
+#: .\templates\base.html:69
+msgid "Мы в соц. сетях:"
+msgstr "We are in the social networks:"
+
+#: .\templates\base.html:78
+msgid "Baker.kg © 2018. Все права защищены."
+msgstr ""
+
+#: .\templates\food_detail.html:33
+msgid "Оставить комментарий:"
+msgstr "Leave comment"
+
+#: .\templates\food_detail.html:41
+msgid "Оставить комментарий"
+msgstr "Leave comment"
+
+#: .\templates\food_detail.html:44
+msgid "Комментарий:"
+msgstr "Comments"
+
+#: .\templates\food_detail.html:58
+msgid "Комментарий не найдены! Станьте первым."
+msgstr "No comments found! Be the first."
+
+#: .\templates\index.html:20
+msgid "Посмотреть полностью"
+msgstr "See all"
+
+#: .\templates\index.html:29
+msgid "Первая"
+msgstr "First"
+
+#: .\templates\index.html:30
+msgid "Предыдущая"
+msgstr "Previous"
+
+#: .\templates\index.html:34
+msgid "Страница"
+msgstr "Page"
+
+#: .\templates\index.html:34
+msgid "из"
+msgstr "of"
+
+#: .\templates\index.html:38
+msgid "Следующая"
+msgstr "Next"
+
+#: .\templates\index.html:39
+msgid "Последняя"
+msgstr "Last"
+
+#: .\templates\main.html:7
+msgid "Посмотреть всё меню"
+msgstr "View all menus"
+
+#: .\templates\main.html:11
+msgid "Сдeлать заказ"
+msgstr "Make Order"
+
+#: .\templates\main.html:17
+msgid "Добро пожаловать!"
+msgstr "Well come"
+
+#: .\templates\main.html:20
+msgid ""
+"Кондитерский цех «Бонжур» -- oдно из крупных кондитерских предприятий г."
+"Бишкек, основанное в 2003 г.Сегодня Бонжур – это актуальный и активно "
+"растущий бренд, стабильно развивающиеся предприятие.Основным видом "
+"деятельности является оптовая продажа кондитерскими изделиями, а также торты "
+"на заказ(свадебные, юбилейные, детские) и широкий ассортимент кондитерских "
+"изделий на праздничные банкеты, фуршеты и кенди-бар. При производстве "
+"кондитерских изделий используются качественные, натуральные и разрешенные "
+"халал продукты."
+msgstr ""
+"Confectionery shop Bonjour is one of the largest confectionery enterprises "
+"in Bishkek, founded in 2003. Today Bonjour is a relevant and rapidly growing "
+"brand, steadily developing enterprises. The main activity is the wholesale "
+"of confectionery, as well as custom-made cakes (wedding , anniversary, "
+"children's) and a wide range of confectionery for festive banquets, "
+"receptions and a candy bar. In the manufacture of confectionery products, "
+"quality, natural and permitted halal products are used."
+
+#: .\templates\make_order.html:8
+msgid "Введите свой настоящий gmail, доставщик свяжется свами"
+msgstr "Enter your real gmail, the provider will contact swami"
+
+#: .\templates\make_order.html:9
+msgid "Напишите все виды изделий которые вы бы хотели заказать у нас"
+msgstr "Write all kinds of products that you would like to order from us"
+
+#: .\templates\make_order.html:26
+msgid "Укажите свое имя"
+msgstr "Enter your name"
+
+#: .\templates\make_order.html:34
+msgid "Укажите свою Gmail почту"
+msgstr "Enter your Gmail"
+
+#: .\templates\make_order.html:47
+msgid "Напишите свое сообщение"
+msgstr "Enter your messages"
+
+#: .\templates\make_order.html:55
+msgid "Отправить"
+msgstr "Sent"
+
+#: .\templates\openid\login.html:9
+msgid "OpenID Sign In"
+msgstr ""
+
+#: .\templates\socialaccount\authentication_error.html:5
+#: .\templates\socialaccount\authentication_error.html:8
+msgid "Social Network Login Failure"
+msgstr ""
+
+#: .\templates\socialaccount\authentication_error.html:10
+msgid ""
+"An error occurred while attempting to login via your social network account."
+msgstr ""
+
+#: .\templates\socialaccount\connections.html:5
+#: .\templates\socialaccount\connections.html:8
+msgid "Account Connections"
+msgstr ""
+
+#: .\templates\socialaccount\connections.html:11
+msgid ""
+"You can sign in to your account using any of the following third party "
+"accounts:"
+msgstr ""
+
+#: .\templates\socialaccount\connections.html:43
+msgid ""
+"You currently have no social network accounts connected to this account."
+msgstr ""
+
+#: .\templates\socialaccount\connections.html:46
+msgid "Add a 3rd Party Account"
+msgstr ""
+
+#: .\templates\socialaccount\login_cancelled.html:5
+#: .\templates\socialaccount\login_cancelled.html:9
+msgid "Login Cancelled"
+msgstr ""
+
+#: .\templates\socialaccount\login_cancelled.html:13
+#, python-format
+msgid ""
+"You decided to cancel logging in to our site using one of your existing "
+"accounts. If this was a mistake, please proceed to <a href=\"%(login_url)s"
+"\">sign in</a>."
+msgstr ""
+
+#: .\templates\socialaccount\signup.html:10
+#, python-format
+msgid ""
+"You are about to use your %(provider_name)s account to login to\n"
+"%(site_name)s. As a final step, please complete the following form:"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:5
+msgid "Select an image to embed"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:27
+msgid "Browse for the image you want, then click 'Embed Image' to continue..."
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:29
+msgid ""
+"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+"tab."
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:50
+msgid "Images in: "
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:62
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:80
+msgid "Embed Image"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:146
+msgid "Play Slideshow"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:147
+msgid "Pause Slideshow"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:148
+msgid "&lsaquo; Previous Photo"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:149
+msgid "Next Photo &rsaquo;"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:150
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:151
+msgid "&lsaquo; Prev"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+msgid "Django: the Web framework for perfectionists with deadlines."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:346
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:368
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:369
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:384
+msgid "Django Documentation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:385
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:396
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:397
+msgid "Get started with Django"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:408
+msgid "Django Community"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:409
+msgid "Connect, get help, or contribute"
+msgstr ""

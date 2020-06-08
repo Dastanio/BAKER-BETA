@@ -1,0 +1,65 @@
+{% extends 'index.html'%}
+{% load i18n %}
+{% block content %}
+
+<div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 py-5">
+                <h1>{% trans "Введите свой настоящий gmail, доставщик свяжется свами"%}</h1>
+                <p class="lead">{% trans "Напишите все виды изделий которые вы бы хотели заказать у нас" %}</p>
+
+                <form id="contact-form" action="{% url 'email' %}" role="form" method="post">
+                    {% csrf_token %}
+                    <div class="messages">
+                        {% if messages %}
+                        {% for message in messages %}
+                        <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">
+                            {{ message }}
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>{% trans "Укажите свое имя"%}</label><input id="form_name" type="text" name="name" class="form-control"
+                                        placeholder="Name.." required="required"
+                                        data-error="Name is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>{% trans "Укажите свою Gmail почту"%}</label>
+                                    <input id="form_email" type="email" name="gmail" class="form-control"
+                                        placeholder="Gmail.." required="required"
+                                        data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>{% trans "Напишите свое сообщение"%}</label>
+                                    <textarea id="form_message" name="message" class="form-control"
+                                        placeholder="Text.." rows="4" required="required"
+                                        data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button>{% trans "Отправить" %}</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock%}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+
+{% for food in page_obj %}
+    <div class="post">
+
+        <img src="{{ food.image.url }}" alt="" class="post_iimg">
+        <div class="post-text">
+            <h2 class="post-title">{{ food.name }}</h2>
+            <span class='pubdate'>{{ food.pub_date }}</span>
+
+            <blockquote><h4 class="p">
+                {{ food.description|truncatechars:"100" }}
+            </h4></blockquote>
+            <blockquote><h4 class="p">
+                {{ food.composition|truncatechars:"100" }}
+            </h4></blockquote>
+            <span class="float-right"><a href="../food_detail/{{food.id}}" class="see_all">{% trans "Посмотреть полностью" %}</a></span>
+        </div>
+    </div>
+{% endfor %}
+
+
+<div class="next-prev">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1" class="new">{% trans "Первая" %}</a>
+            <a href="?page={{ page_obj.previous_page_number }}" class="new">{% trans "Предыдущая" %}</a>
+        {% endif %}
+
+        <span class="current">
+            {% trans "Страница" %} {{ page_obj.number }} {% trans "из" %} {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}" class="new">{% trans "Следующая"%}</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}" class="new">{% trans "Последняя"%}</a>
+        {% endif %}
+    </span>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<div class="content">
+        <div class="cat">
+            <div class="catalog"><a href="{% url 'index' %}" class="button">{% trans "Посмотреть всё меню"%}</a></div>
+        </div>
+
+        <div class="cat">
+            <div class="catalog"><a href="{% url 'email' %}" class="button">{% trans "Сдeлать заказ"%}</a></div>
+        </div>
+
+
+        <div class="hi">
+        <img src="{% static "mainpage/img/hey.png" %}" alt="" class="hey">
+        <h1 class="title">{% trans "Добро пожаловать!"%}</h1>
+        <img src="{% static "mainpage/img/hey.png" %}" alt="" class="hey">
+    </div>
+        <h4 class="text">{% trans "Кондитерский цех «Бонжур» -- oдно из крупных кондитерских предприятий г.Бишкек, основанное в 2003 г.<br><br>Сегодня Бонжур – это актуальный и активно растущий бренд, стабильно развивающиеся предприятие.Основным видом деятельности является оптовая продажа кондитерскими изделиями, а также торты на заказ(свадебные, юбилейные, детские) и широкий ассортимент кондитерских изделий на праздничные банкеты, фуршеты и кенди-бар. При производстве кондитерских изделий используются качественные, натуральные и разрешенные халал продукты." %}
+        </h4>
+
+    </div>
+{% endblock %}

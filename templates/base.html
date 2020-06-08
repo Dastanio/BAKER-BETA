@@ -1,0 +1,83 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="all" href="{% static "mainpage/css/style.css" %}" type="text/css">
+        <link rel="shortcut icon" href="{% static "mainpage/img/icon.ico" %}" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+2|Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script|Roboto&display=swap" rel="stylesheet">
+        <title>Главная</title>
+    </head>
+<body>
+
+   <header class="header">
+
+        <h1 class="name">Levas Baker</h1>
+        <div class="menu">
+            <img src="{% static "mainpage/img/cake.png" %}" alt="" class="cake">
+            <a href="{% url 'main' %}" class="but-menu">{% trans "Главная" %}</a>
+            <img src="{% static "mainpage/img/cake.png" %}" alt="" class="cake">
+            <a href="{% url 'about' %}" class="but-menu">{% trans "О нас" %}</a>
+            <img src="{% static "mainpage/img/cake.png" %}" alt="" class="cake">
+            <a href="{% url 'index' %}" class="but-menu">{% trans "Продукция" %}</a>
+            <img src="{% static "mainpage/img/cake.png" %}" alt="" class="cake">
+            <a href="{% url 'email' %}" class="but-menu">{% trans "Сделать заказ" %}</a>
+
+
+        </div>
+
+                                        <!-- выбор языка для сайта-->
+                            <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}">
+                        <select name="language">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %}
+                                        selected{% endif %}>
+                                    {{ language.name_local }} ({{ language.code }})
+                                </option>
+                            {% endfor %}
+                        </select>
+                        <input type="submit" value="Go">
+                    </form>
+
+        <h1 class="love">{% trans "Сделано с любовью" %}</h1>
+        <img src="{% static "mainpage/img/logo.png" %}" alt="" class="imglogo">
+        <div class="regestracia">
+            {% if user.is_authenticated %}
+            <span>{{ user.username }}</span>
+            <a href="{% url 'account_logout' %}" class="reg">{% trans "Выйти" %}</a>
+            {% else %}
+            <a href="{% url 'account_signup' %}" class="reg">{% trans "Зарегестрироваться" %}</a>
+            <a href="{% url 'account_login' %}" class="reg">{% trans "Войти" %}</a>
+            {% endif %}
+        </div>
+    </header>
+
+
+    {% block content %}
+
+    {% endblock %}
+
+
+    <footer class="footer">
+        <h3 class="our">{% trans "Мы в соц. сетях:" %}</h3>
+        <div class="cont">
+            <a href="https://api.whatsapp.com/send?phone=996559595139"><img
+                    src="https://img.icons8.com/color/48/000000/whatsapp.png" class="social"></a>
+            <a href="https://t.me/lolhkol"><img src="https://img.icons8.com/color/48/000000/telegram-app.png"
+                    class="social"></a>
+            <a href="https://instagram.com/__bmw__lifellove__?igshid=1pbnqrb22upmu"><img
+                    src="https://img.icons8.com/officel/48/000000/instagram-new.png" class="social"></a>
+        </div>
+        <span>{% trans "Baker.kg © 2018. Все права защищены." %}</span>
+    </footer>
+
+</body>
+<script src="{% static 'js/scripts.js' %}"></script>
+</html>
